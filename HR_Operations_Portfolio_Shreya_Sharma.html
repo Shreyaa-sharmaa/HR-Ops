@@ -1,0 +1,1302 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shreya Sharma | HR Operations Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1b2430;
+    --ink-soft: #2a3441;
+    --paper: #f2efe6;
+    --paper-panel: #ffffff;
+    --line: #d8d3c4;
+    --text: #23272b;
+    --text-muted: #5b6169;
+    --text-on-ink: #ecebe3;
+    --text-on-ink-muted: #a9b0ba;
+    --brass: #b3813f;
+    --teal: #4f6d64;
+    --slate: #51677d;
+    --clay: #a85c3b;
+    --maroon: #8c3b3b;
+
+    --grade-a: var(--brass);
+    --grade-b: var(--teal);
+    --grade-c: var(--slate);
+    --grade-d: var(--clay);
+    --grade-e: var(--maroon);
+
+    font-family: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #14181d;
+      --paper-panel: #1c2128;
+      --line: #333a43;
+      --text: #e6e4dc;
+      --text-muted: #9aa0a8;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #14181d;
+    --paper-panel: #1c2128;
+    --line: #333a43;
+    --text: #e6e4dc;
+    --text-muted: #9aa0a8;
+  }
+
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); scroll-behavior: smooth; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; }
+
+  .wrap { max-width: 780px; margin: 0 auto; padding: 0 24px; }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    background: var(--ink);
+    color: var(--text-on-ink);
+    padding: 64px 0 48px;
+  }
+  .hero .eyebrow-row {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    color: var(--text-on-ink-muted);
+    letter-spacing: 0.02em;
+    margin-bottom: 22px;
+  }
+  .hero .eyebrow-row .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--brass); }
+  .hero h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 500;
+    font-size: clamp(34px, 6vw, 50px);
+    line-height: 1.08;
+    margin: 0 0 14px;
+    letter-spacing: -0.01em;
+  }
+  .hero .title-line {
+    font-size: 16px;
+    color: var(--text-on-ink);
+    margin: 0 0 6px;
+  }
+  .hero .uni-line {
+    font-size: 14px;
+    color: var(--text-on-ink-muted);
+    line-height: 1.5;
+    max-width: 52ch;
+    margin: 0 0 18px;
+  }
+  .hero .name-line {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: clamp(20px, 3.4vw, 26px);
+    color: var(--brass);
+    margin: 0 0 8px;
+  }
+  .hero p.role {
+    font-size: 17px;
+    color: var(--text-on-ink-muted);
+    max-width: 46ch;
+    line-height: 1.55;
+    margin: 0;
+  }
+
+  /* ---------- Index nav ---------- */
+  .index {
+    border-bottom: 1px solid var(--line);
+    background: var(--paper);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+  }
+  .index ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .index li {
+    border-right: 1px solid var(--line);
+  }
+  .index li:last-child { border-right: none; }
+  .index a { text-decoration: none; }
+  .index button {
+    all: unset;
+    display: block;
+    padding: 16px 20px;
+    font-size: 13.5px;
+    font-family: "IBM Plex Mono", monospace;
+    cursor: pointer;
+    color: var(--text-muted);
+  }
+  .index li.active button {
+    color: var(--text);
+    background: var(--paper-panel);
+    box-shadow: inset 0 -2px 0 var(--brass);
+  }
+  .index li.disabled button { cursor: default; opacity: 0.45; }
+
+  /* ---------- Case study ---------- */
+  .case { padding: 56px 0 90px; }
+
+  .case-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding-bottom: 28px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid var(--line);
+  }
+  .case-head .num {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    color: var(--brass);
+    margin: 0 0 8px;
+  }
+  .case-head h2 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.18;
+    margin: 0 0 12px;
+  }
+  .case-head .meta-line {
+    font-size: 13.5px;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+  .stamp {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+    border: 1px solid var(--line);
+    padding: 7px 12px;
+    white-space: nowrap;
+    transform: rotate(1.2deg);
+  }
+
+  section.block { margin-bottom: 44px; }
+  section.block h3 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 500;
+    font-size: 19px;
+    margin: 0 0 14px;
+  }
+  section.block p { line-height: 1.7; font-size: 15.5px; color: var(--text); max-width: 68ch; }
+  section.block p + p { margin-top: 12px; }
+
+  /* weightage bars */
+  .weightage { display: flex; flex-direction: column; gap: 14px; margin-top: 18px; }
+  .w-row { }
+  .w-row .w-top { display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 6px; }
+  .w-row .w-top .label { font-weight: 500; }
+  .w-row .w-top .pct { font-family: "IBM Plex Mono", monospace; color: var(--brass); }
+  .w-track { height: 8px; background: var(--line); position: relative; }
+  .w-fill { height: 100%; background: var(--teal); }
+  .w-row .w-params { font-size: 13px; color: var(--text-muted); margin-top: 6px; line-height: 1.6; }
+
+  /* reviewer split */
+  .split-bar { display: flex; height: 34px; border: 1px solid var(--line); margin-top: 16px; overflow: hidden; }
+  .split-bar span { display: flex; align-items: center; justify-content: center; font-family: "IBM Plex Mono", monospace; font-size: 11.5px; color: var(--text-on-ink); }
+  .split-bar .self { background: var(--slate); width: 10%; }
+  .split-bar .mgr { background: var(--teal); width: 60%; }
+  .split-bar .mgr-sup { background: #6b8880; width: 10%; }
+  .split-bar .peer { background: var(--brass); width: 30%; color: #201404; }
+  .split-legend { display:flex; flex-wrap:wrap; gap: 16px; margin-top: 10px; font-size: 12.5px; color: var(--text-muted); }
+  .split-legend i { display:inline-block; width:9px; height:9px; margin-right:6px; vertical-align:middle; }
+
+  /* timeline */
+  .timeline { border-left: 2px solid var(--line); margin-left: 6px; }
+  .t-item { position: relative; padding: 0 0 26px 24px; }
+  .t-item:last-child { padding-bottom: 0; }
+  .t-item::before {
+    content: attr(data-n);
+    position: absolute; left: -12px; top: 0;
+    width: 22px; height: 22px;
+    background: var(--paper);
+    border: 2px solid var(--brass);
+    color: var(--brass);
+    border-radius: 50%;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .t-item .t-title { font-weight: 600; font-size: 14.5px; margin-bottom: 3px; }
+  .t-item .t-when { font-family: "IBM Plex Mono", monospace; font-size: 12px; color: var(--brass); margin-bottom: 4px; }
+  .t-item .t-note { font-size: 13.5px; color: var(--text-muted); line-height: 1.55; max-width: 58ch; }
+
+  /* reviewer table */
+  table.reviewers { width: 100%; border-collapse: collapse; margin-top: 14px; font-size: 13.5px; }
+  table.reviewers th, table.reviewers td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  table.reviewers th { font-family: "IBM Plex Mono", monospace; font-weight: 500; font-size: 11.5px; color: var(--text-muted); text-transform: none; }
+
+  /* grading */
+  .grade-table { display: flex; flex-direction: column; gap: 8px; margin-top: 16px; }
+  .grade-row {
+    display: grid;
+    grid-template-columns: 44px 1fr 100px 110px;
+    gap: 14px;
+    align-items: center;
+    padding: 12px 14px;
+    background: var(--paper-panel);
+    border: 1px solid var(--line);
+    border-left: 5px solid var(--g);
+  }
+  .grade-row .g-letter { font-family: "Fraunces", serif; font-size: 22px; font-weight: 600; color: var(--g); }
+  .grade-row .g-band { font-size: 14px; }
+  .grade-row .g-band .g-range { display:block; font-family:"IBM Plex Mono", monospace; font-size: 11.5px; color: var(--text-muted); margin-top: 2px; }
+  .grade-row .g-incr { font-family: "IBM Plex Mono", monospace; font-size: 13.5px; text-align: right; }
+  .grade-row .g-next { font-size: 12.5px; color: var(--text-muted); text-align: right; }
+
+  /* bell curve */
+  .bell { display: flex; align-items: flex-end; gap: 10px; height: 140px; margin-top: 20px; padding: 0 4px; }
+  .bell .bar-col { flex: 1; display: flex; flex-direction: column; align-items: center; height: 100%; justify-content: flex-end; }
+  .bell .bar { width: 100%; max-width: 56px; background: var(--g); }
+  .bell .bar-col .bar-pct { font-family: "IBM Plex Mono", monospace; font-size: 12px; margin-bottom: 6px; }
+  .bell .bar-col .bar-label { font-size: 11.5px; color: var(--text-muted); margin-top: 8px; text-align: center; }
+
+  /* PIP */
+  .pip-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 16px; }
+  .pip-card { background: var(--paper-panel); border: 1px solid var(--line); padding: 14px 16px; }
+  .pip-card .pip-k { font-family: "IBM Plex Mono", monospace; font-size: 11px; color: var(--text-muted); margin-bottom: 6px; }
+  .pip-card .pip-v { font-size: 14px; line-height: 1.5; }
+
+  .note {
+    margin-top: 40px;
+    padding: 16px 18px;
+    border: 1px dashed var(--line);
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  /* values grid */
+  .values-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 18px; }
+  .value-card { background: var(--paper-panel); border: 1px solid var(--line); padding: 13px 12px; }
+  .value-card .v-name { font-family: "Fraunces", serif; font-weight: 500; font-size: 14px; margin-bottom: 6px; line-height: 1.25; }
+  .value-card .v-desc { font-size: 12px; color: var(--text-muted); line-height: 1.5; }
+
+  /* award cards */
+  .award-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 18px; }
+  .award-card { background: var(--paper-panel); border: 1px solid var(--line); border-top: 3px solid var(--g); padding: 16px 18px; }
+  .award-card .a-name { font-family: "Fraunces", serif; font-weight: 500; font-size: 16px; margin-bottom: 8px; }
+  .award-card .a-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+  .a-tag { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; padding: 3px 8px; border: 1px solid var(--line); color: var(--text-muted); }
+  .award-card .a-desc { font-size: 13px; color: var(--text-muted); line-height: 1.55; }
+
+  .milestones { display: flex; gap: 14px; margin-top: 18px; flex-wrap: wrap; }
+  .milestone { flex: 1; min-width: 150px; background: var(--paper-panel); border: 1px solid var(--line); padding: 16px; text-align: center; }
+  .milestone .m-yr { font-family: "Fraunces", serif; font-size: 24px; color: var(--brass); font-weight: 600; }
+  .milestone .m-lbl { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+
+  .callout {
+    margin-top: 20px;
+    padding: 14px 18px;
+    background: var(--paper-panel);
+    border-left: 3px solid var(--brass);
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: var(--text);
+  }
+  .callout a { text-decoration: underline; }
+
+  /* ---------- Case 03: sitemap ---------- */
+  .sitemap { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 18px; }
+  .sitemap-col { background: var(--paper-panel); border: 1px solid var(--line); }
+  .sitemap-col .sm-head {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11.5px;
+    color: var(--text-on-ink);
+    background: var(--ink-soft);
+    padding: 10px 12px;
+  }
+  .sitemap-col ul { list-style: none; margin: 0; padding: 0; }
+  .sitemap-col li { font-size: 13px; padding: 9px 12px; border-top: 1px solid var(--line); color: var(--text-muted); }
+  .sitemap-col li:first-child { border-top: none; }
+
+  /* widget grid */
+  .widget-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 18px; }
+  .widget-card { background: var(--paper-panel); border: 1px solid var(--line); padding: 13px 12px; }
+  .widget-card .wg-name { font-weight: 600; font-size: 13.5px; margin-bottom: 5px; }
+  .widget-card .wg-desc { font-size: 12px; color: var(--text-muted); line-height: 1.5; }
+
+  /* tech capability rows */
+  .tech-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 18px; }
+  .tech-card { background: var(--paper-panel); border: 1px solid var(--line); padding: 16px 18px; }
+  .tech-card .tc-name { font-family: "Fraunces", serif; font-weight: 500; font-size: 15px; margin-bottom: 8px; }
+  .tech-card .tc-desc { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+
+  /* stat row */
+  .stat-row { display: flex; gap: 14px; margin-top: 20px; flex-wrap: wrap; }
+  .stat-box { flex: 1; min-width: 130px; background: var(--ink); color: var(--text-on-ink); padding: 18px 16px; }
+  .stat-box .st-num { font-family: "Fraunces", serif; font-size: 26px; font-weight: 600; color: var(--brass); }
+  .stat-box .st-lbl { font-size: 11.5px; color: var(--text-on-ink-muted); margin-top: 4px; line-height: 1.4; }
+
+  /* ---------- Case 04: dashboards & skills ---------- */
+  .dash-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 16px; }
+  .dash-grid .tech-card { padding: 14px 15px; }
+  .dash-grid .tech-card .tc-name { font-family: "IBM Plex Mono", monospace; font-size: 11px; color: var(--brass); letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 8px; }
+  .dash-grid .tech-card .tc-desc { font-size: 12.5px; }
+  .status-card { border-left: 5px solid var(--g); }
+  .rag-bar span.rag-r { background: var(--maroon); width: 40%; }
+  .rag-bar span.rag-y { background: #e8dcb5; color: #3a300f; width: 30%; }
+  .rag-bar span.rag-g { background: var(--teal); width: 30%; }
+  .tag-row { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 12px; }
+  .skill-group { margin-top: 18px; }
+  .skill-group + .skill-group { margin-top: 26px; }
+  .skill-group h4 { font-family: "IBM Plex Mono", monospace; font-size: 12px; font-weight: 500; color: var(--brass); letter-spacing: 0.04em; text-transform: uppercase; margin: 0; }
+  @media (max-width: 640px) {
+    .dash-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- Phone: dropdown navigation, one section at a time ---------- */
+  .index-select { display: none; }
+  @media (max-width: 640px) {
+    .index ul { display: none; }
+    .index-select {
+      display: block;
+      width: 100%;
+      margin: 0;
+      padding: 14px 40px 14px 0;
+      border: none;
+      border-radius: 0;
+      background-color: transparent;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%23b3813f' stroke-width='1.8'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 4px center;
+      -webkit-appearance: none;
+      appearance: none;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 13.5px;
+      color: var(--text);
+      text-overflow: ellipsis;
+    }
+    .case { padding: 32px 0 60px; }
+  }
+
+  @media (max-width: 640px) {
+    .values-grid { grid-template-columns: repeat(2, 1fr); }
+    .award-grid { grid-template-columns: 1fr; }
+    .sitemap { grid-template-columns: 1fr; }
+    .widget-grid { grid-template-columns: repeat(2, 1fr); }
+    .tech-grid { grid-template-columns: 1fr; }
+  }
+
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 30px 0 50px;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  @media (max-width: 560px) {
+    .case-head { flex-direction: column; }
+    .grade-row { grid-template-columns: 34px 1fr; row-gap: 6px; }
+    .grade-row .g-incr, .grade-row .g-next { text-align: left; }
+    .pip-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="wrap">
+      <h1>HR Operations Portfolio</h1>
+      <p class="name-line">Shreya Sharma</p>
+      <p class="title-line">MBA (HR Management) Candidate · HR Operations</p>
+      <p class="uni-line">School of Management &amp; Research, Dnyaan Prasad Global University (DPGU), Dr. D.Y. Patil Unitech Society, Pune</p>
+      <p class="role">Projects from live HR systems I designed and implemented during my HR Operations internship.</p>
+    </div>
+  </div>
+
+  <div class="index">
+    <div class="wrap">
+      <ul>
+        <li><a href="#case-01"><button>01 · Performance Appraisal System</button></a></li>
+        <li><a href="#case-02"><button>02 · Rewards &amp; Recognition Program</button></a></li>
+        <li><a href="#case-03"><button>03 · Rubynet Intranet (SharePoint)</button></a></li>
+        <li><a href="#case-04"><button>04 · HR Analytics &amp; Dashboards</button></a></li>
+        <li><a href="#case-05"><button>05 · HR Policies</button></a></li>
+        <li><a href="#case-06"><button>06 · Recruitment</button></a></li>
+        <li><a href="#skills"><button>Skills &amp; Tools</button></a></li>
+      </ul>
+      <select class="index-select" id="sectionSelect" aria-label="Choose a section">
+        <option value="case-01">01 · Performance Appraisal System</option>
+        <option value="case-02">02 · Rewards &amp; Recognition Program</option>
+        <option value="case-03">03 · Rubynet Intranet (SharePoint)</option>
+        <option value="case-04">04 · HR Analytics &amp; Dashboards</option>
+        <option value="case-05">05 · HR Policies</option>
+        <option value="case-06">06 · Recruitment</option>
+        <option value="skills">Skills &amp; Tools</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="case" id="case-01">
+
+      <div class="case-head">
+        <div>
+          <p class="num">PROJECT 01</p>
+          <h2>Designing an Annual Performance Appraisal System from the ground up</h2>
+          <p class="meta-line">A 50-person financial services company · HR Operations Intern · Full-cycle system design, FY 2026–27</p>
+        </div>
+        <div class="stamp">DESIGNED &amp; IMPLEMENTED<br>END-TO-END</div>
+      </div>
+
+      <section class="block">
+        <h3>The brief</h3>
+        <p>The company had no structured performance review process — increments and promotion decisions were made informally, with no consistent way to recognise contribution, track growth, or link individual performance to business objectives. I was asked to design a complete Performance Appraisal (PA) system from scratch: the review methodology, the assessment forms, the scoring model, the timeline, and the increment and improvement framework that would sit behind it.</p>
+        <p>The result is a documented, repeatable annual cycle now used as the reference for every employee, manager and HR stakeholder in the organisation.</p>
+      </section>
+
+      <section class="block">
+        <h3>A 360° feedback model</h3>
+        <p>Rather than a single top-down manager rating, I built the system around 360° feedback — combining a self-assessment, the direct manager's review, and two independent peer reviews (one from within the employee's team, one from outside it). This reduces individual bias, surfaces strengths a manager alone might miss, and builds a culture of transparent, development-focused feedback. Peer identities are kept confidential throughout.</p>
+        <div class="split-bar">
+          <span class="self">Self 10%</span><span class="mgr">Manager 60%</span><span class="mgr-sup">Mgr. supp. 10%</span><span class="peer">Peers 30%</span>
+        </div>
+        <div class="split-legend">
+          <span><i style="background:var(--slate)"></i>Self-assessment — 10%</span>
+          <span><i style="background:var(--teal)"></i>Manager assessment — 60%</span>
+          <span><i style="background:#6b8880"></i>Managerial supplementary — 10%</span>
+          <span><i style="background:var(--brass)"></i>Peer review (2 peers) — 30%</span>
+        </div>
+      </section>
+
+      <section class="block">
+        <h3>Assessment framework &amp; weightage</h3>
+        <p>Every employee is scored (1–5 scale) across four weighted sections, each scored by a different combination of reviewers depending on what it measures:</p>
+        <div class="weightage">
+          <div class="w-row">
+            <div class="w-top"><span class="label">Core Values</span><span class="pct">20%</span></div>
+            <div class="w-track"><div class="w-fill" style="width:20%; background:var(--slate)"></div></div>
+            <div class="w-params">Continuous learning · Collaboration · Proactive thinking · Integrity &amp; trust · Ownership — scored by self, manager and peers</div>
+          </div>
+          <div class="w-row">
+            <div class="w-top"><span class="label">Role-based KRAs</span><span class="pct">40%</span></div>
+            <div class="w-track"><div class="w-fill" style="width:40%; background:var(--teal)"></div></div>
+            <div class="w-params">Core job deliverables specific to each function — the highest-weighted section, scored by self and manager</div>
+          </div>
+          <div class="w-row">
+            <div class="w-top"><span class="label">Professionalism</span><span class="pct">30%</span></div>
+            <div class="w-track"><div class="w-fill" style="width:30%; background:var(--brass)"></div></div>
+            <div class="w-params">Attendance, punctuality, leave patterns and adherence to workplace policy — scored by HR</div>
+          </div>
+          <div class="w-row">
+            <div class="w-top"><span class="label">Growth</span><span class="pct">10%</span></div>
+            <div class="w-track"><div class="w-fill" style="width:10%; background:var(--clay)"></div></div>
+            <div class="w-params">Progress against last year's goals, certifications, and quality of goals set for next cycle — scored by manager</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h3>Review timeline — six stages, one cycle</h3>
+        <div class="timeline">
+          <div class="t-item" data-n="1">
+            <div class="t-title">Manager form circulation</div>
+            <div class="t-when">Late Feb – early Mar</div>
+            <div class="t-note">Manager reviews the employee before seeing self or peer input, to keep the initial assessment independent.</div>
+          </div>
+          <div class="t-item" data-n="2">
+            <div class="t-title">Self &amp; peer evaluation</div>
+            <div class="t-when">Early–late March</div>
+            <div class="t-note">Employee completes a self-rating across all sections; two peers submit independent, confidential reviews.</div>
+          </div>
+          <div class="t-item" data-n="3">
+            <div class="t-title">Consolidated review &amp; calibration</div>
+            <div class="t-when">1st–2nd week April</div>
+            <div class="t-note">All forms compiled; section scores weighted and a grand total computed for each employee.</div>
+          </div>
+          <div class="t-item" data-n="4">
+            <div class="t-title">Final evaluation discussion</div>
+            <div class="t-when">2nd week April</div>
+            <div class="t-note">One-on-one conversation covering performance, promotion and compensation — outcome shared verbally and in writing.</div>
+          </div>
+          <div class="t-item" data-n="5">
+            <div class="t-title">Salary revision &amp; acknowledgement</div>
+            <div class="t-when">Within 5 working days</div>
+            <div class="t-note">Revised offer/increment letter issued; employee signs to acknowledge.</div>
+          </div>
+          <div class="t-item" data-n="6">
+            <div class="t-title">PIP commencement (where applicable)</div>
+            <div class="t-when">Same day as evaluation</div>
+            <div class="t-note">Employees graded D or E move directly into a structured 30-day improvement plan — no deferral.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h3>Who reviews whom</h3>
+        <table class="reviewers">
+          <tr><th>Employee level</th><th>Primary reviewer</th><th>Final sign-off</th></tr>
+          <tr><td>Senior roles (Manager, Sr. Associate, AVP+)</td><td>Founders / senior leadership</td><td>Leadership + HR</td></tr>
+          <tr><td>Junior roles (Analyst, Associate, entry-level)</td><td>Direct reporting manager</td><td>Manager + HR</td></tr>
+        </table>
+      </section>
+
+      <section class="block">
+        <h3>Grading &amp; increment structure</h3>
+        <p>The weighted grand total maps to one of five performance bands, each tied directly to increment eligibility and next steps — this is the piece that gives the whole system teeth.</p>
+        <div class="grade-table">
+          <div class="grade-row" style="--g:var(--grade-a)">
+            <div class="g-letter">A</div>
+            <div class="g-band">Outstanding<span class="g-range">4.5 – 5.0</span></div>
+            <div class="g-incr">15–20%</div>
+            <div class="g-next">Fast-track promotion</div>
+          </div>
+          <div class="grade-row" style="--g:var(--grade-b)">
+            <div class="g-letter">B</div>
+            <div class="g-band">Strong performer<span class="g-range">4.0 – 4.4</span></div>
+            <div class="g-incr">10–14%</div>
+            <div class="g-next">Promotion discussion</div>
+          </div>
+          <div class="grade-row" style="--g:var(--grade-c)">
+            <div class="g-letter">C</div>
+            <div class="g-band">Solid performer<span class="g-range">3.5 – 3.9</span></div>
+            <div class="g-incr">6–8%</div>
+            <div class="g-next">Standard increment</div>
+          </div>
+          <div class="grade-row" style="--g:var(--grade-d)">
+            <div class="g-letter">D</div>
+            <div class="g-band">Needs improvement<span class="g-range">3.0 – 3.4</span></div>
+            <div class="g-incr">Nil</div>
+            <div class="g-next">30-day PIP</div>
+          </div>
+          <div class="grade-row" style="--g:var(--grade-e)">
+            <div class="g-letter">E</div>
+            <div class="g-band">Unsatisfactory<span class="g-range">&lt; 3.0</span></div>
+            <div class="g-incr">Nil</div>
+            <div class="g-next">30-day PIP</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h3>Expected distribution</h3>
+        <p>I modelled an illustrative bell curve so leadership could sanity-check the grading scale before rollout — most employees land in the B–C range, with A and E as narrow tails.</p>
+        <div class="bell">
+          <div class="bar-col" style="--g:var(--grade-e)"><span class="bar-pct">5%</span><div class="bar" style="height:20%"></div><span class="bar-label">E</span></div>
+          <div class="bar-col" style="--g:var(--grade-d)"><span class="bar-pct">10%</span><div class="bar" style="height:35%"></div><span class="bar-label">D</span></div>
+          <div class="bar-col" style="--g:var(--grade-c)"><span class="bar-pct">35%</span><div class="bar" style="height:90%"></div><span class="bar-label">C</span></div>
+          <div class="bar-col" style="--g:var(--grade-b)"><span class="bar-pct">45%</span><div class="bar" style="height:100%"></div><span class="bar-label">B</span></div>
+          <div class="bar-col" style="--g:var(--grade-a)"><span class="bar-pct">5%</span><div class="bar" style="height:20%"></div><span class="bar-label">A</span></div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h3>Performance Improvement Plan (PIP)</h3>
+        <p>For anyone graded D or E, the system doesn't stop at "needs improvement" — it moves straight into a structured, time-bound support plan:</p>
+        <div class="pip-grid">
+          <div class="pip-card"><div class="pip-k">DURATION</div><div class="pip-v">30 days initially, extendable to a maximum of 60 with documented evidence of progress</div></div>
+          <div class="pip-card"><div class="pip-k">CADENCE</div><div class="pip-v">Weekly check-ins with an assigned manager or buddy; progress logged each session</div></div>
+          <div class="pip-card"><div class="pip-k">COMMENCEMENT</div><div class="pip-v">Same day as the evaluation discussion — no deferral</div></div>
+          <div class="pip-card"><div class="pip-k">OUTCOME</div><div class="pip-v">Successful completion returns the employee to the standard review cycle; unsuccessful completion is escalated to HR and leadership</div></div>
+        </div>
+      </section>
+
+      <div class="note">
+        Note: company name and figures have been generalised for confidentiality. The framework, structure and design decisions shown are my own original work.
+      </div>
+
+    </div>
+
+    <div class="case" id="case-02">
+
+      <div class="case-head">
+        <div>
+          <p class="num">PROJECT 02</p>
+          <h2>Building a Rewards &amp; Recognition Program tied to core values</h2>
+          <p class="meta-line">Same 50-person organisation · HR Operations Intern · Program design &amp; policy documentation, effective Sept 2026</p>
+        </div>
+        <div class="stamp">DESIGNED<br>FROM SCRATCH</div>
+      </div>
+
+      <section class="block">
+        <h3>The brief</h3>
+        <p>Recognition at the company was informal and inconsistent — good work went unnoticed as often as it was celebrated, and there was no shared language for what "great performance" actually looked like. I designed a complete Rewards &amp; Recognition Program that ties every award to a defined core value, scores nominees against explicit criteria, and runs on a repeatable quarterly/monthly/annual cycle — replacing ad hoc appreciation with a structured, fair, and visible system.</p>
+      </section>
+
+      <section class="block">
+        <h3>Five core values, made scoreable</h3>
+        <p>Rather than leave "values" as a poster on the wall, I broke each one into concrete, observable parameters that a manager can actually score a nominee against — so recognition is evidence-based, not a popularity contest.</p>
+        <div class="values-grid">
+          <div class="value-card"><div class="v-name">Consultative Mindset</div><div class="v-desc">Understands the ask, asks the right questions, offers thoughtful solutions</div></div>
+          <div class="value-card"><div class="v-name">Client First Attitude</div><div class="v-desc">Puts client needs and experience at the centre of every decision</div></div>
+          <div class="value-card"><div class="v-name">Ownership</div><div class="v-desc">Sees work through start to finish without waiting to be chased</div></div>
+          <div class="value-card"><div class="v-name">Proactiveness</div><div class="v-desc">Anticipates needs and acts before being told to</div></div>
+          <div class="value-card"><div class="v-name">Leadership Skills</div><div class="v-desc">Influences and supports others, creates clarity, lifts team results</div></div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h3>Award structure — four tiers of recognition</h3>
+        <p>Four quarterly Core Value Awards form the backbone of the program, layered with a monthly and an annual flagship award, plus automatic milestone awards for tenure.</p>
+        <div class="award-grid">
+          <div class="award-card" style="--g:var(--slate)">
+            <div class="a-name">Consultative Excellence Award</div>
+            <div class="a-tags"><span class="a-tag">Consultative Mindset</span><span class="a-tag">Quarterly</span></div>
+            <div class="a-desc">For employees who understand requirements deeply and provide thoughtful, practical solutions.</div>
+          </div>
+          <div class="award-card" style="--g:var(--teal)">
+            <div class="a-name">Client Delight Award</div>
+            <div class="a-tags"><span class="a-tag">Client First Attitude</span><span class="a-tag">Quarterly</span></div>
+            <div class="a-desc">For consistently exceptional client experience and understanding of client needs.</div>
+          </div>
+          <div class="award-card" style="--g:var(--brass)">
+            <div class="a-name">Beyond Expectations Award</div>
+            <div class="a-tags"><span class="a-tag">Ownership + Proactiveness</span><span class="a-tag">Quarterly</span></div>
+            <div class="a-desc">For going beyond defined responsibilities and delivering more than what was asked.</div>
+          </div>
+          <div class="award-card" style="--g:var(--clay)">
+            <div class="a-name">Emerging Leader Award</div>
+            <div class="a-tags"><span class="a-tag">Leadership + Ownership</span><span class="a-tag">Quarterly</span></div>
+            <div class="a-desc">For employees showing leadership potential and readiness for greater responsibility.</div>
+          </div>
+          <div class="award-card" style="--g:var(--maroon)">
+            <div class="a-name">Employee of the Month</div>
+            <div class="a-tags"><span class="a-tag">All 5 values</span><span class="a-tag">Monthly</span></div>
+            <div class="a-desc">A holistic monthly award judged on performance and behaviour within that specific month.</div>
+          </div>
+          <div class="award-card" style="--g:var(--ink)">
+            <div class="a-name">Star Performer of the Year</div>
+            <div class="a-tags"><span class="a-tag">All 5 values</span><span class="a-tag">Annual</span></div>
+            <div class="a-desc">The flagship award — judged on a full year of consistent performance, requires 12 months' tenure.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h3>Milestone (tenure) awards</h3>
+        <p>Awarded automatically on reaching a service milestone — no nomination required, just HR and manager confirmation.</p>
+        <div class="milestones">
+          <div class="milestone"><div class="m-yr">2 YR</div><div class="m-lbl">Milestone Award</div></div>
+          <div class="milestone"><div class="m-yr">3 YR</div><div class="m-lbl">Milestone Award</div></div>
+          <div class="milestone"><div class="m-yr">5 YR+</div><div class="m-lbl">Milestone Award</div></div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h3>Nomination &amp; selection process</h3>
+        <div class="timeline">
+          <div class="t-item" data-n="1">
+            <div class="t-title">Nomination</div>
+            <div class="t-note">One employee nominated per department by their AVP, scored against the award's specific criteria on the nomination form. Self-nominations are not accepted.</div>
+          </div>
+          <div class="t-item" data-n="2">
+            <div class="t-title">HR consolidation</div>
+            <div class="t-note">HR compiles nominations and scores from both departments ahead of the recognition event.</div>
+          </div>
+          <div class="t-item" data-n="3">
+            <div class="t-title">Management selection</div>
+            <div class="t-note">Leadership reviews the scored entries and selects the winner based on the strongest, most representative nomination.</div>
+          </div>
+          <div class="t-item" data-n="4">
+            <div class="t-title">Announcement &amp; recognition</div>
+            <div class="t-note">Winners are announced at the recognition event and receive a certificate, public recognition, and a gift.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h3>Eligibility guardrails</h3>
+        <p>To keep the program credible, every award carries the same baseline conditions: a minimum tenure (3 months for quarterly/monthly awards, 12 months for the annual award), no self-nominations, and exclusion for anyone serving a notice period.</p>
+        <div class="callout">
+          The program is deliberately linked to the Performance Appraisal System (Project 01): an employee on an active Performance Improvement Plan or with an unresolved disciplinary matter is not eligible for nomination. Recognition and performance management were designed to reinforce each other, not run as two disconnected systems.
+        </div>
+      </section>
+
+      <div class="note">
+        Note: company name has been generalised for confidentiality. The program structure, criteria and documentation are my own original work.
+      </div>
+
+    </div>
+
+    <div class="case" id="case-03">
+
+      <div class="case-head">
+        <div>
+          <p class="num">PROJECT 03</p>
+          <h2>Building the company intranet from a blank SharePoint site</h2>
+          <p class="meta-line">Same 50-person organisation · HR Operations Intern · End-to-end build, no prior SharePoint experience, May–Oct 2026</p>
+        </div>
+        <div class="stamp">SELF-TAUGHT<br>LIVE COMPANY-WIDE</div>
+      </div>
+
+      <section class="block">
+        <h3>The brief</h3>
+        <p>The company had no central place for employee communication — no shared home for policies, announcements, team directories or onboarding material. I was asked to build one from a blank SharePoint site, with no prior SharePoint experience. I learned the platform from documentation and tutorials as I went, and built what the company now calls its intranet: a communication hub covering company news, HR resources, department pages and an employee directory, used company-wide today.</p>
+        <div class="stat-row">
+          <div class="stat-box"><div class="st-num">0 → 1</div><div class="st-lbl">No prior SharePoint experience going in</div></div>
+          <div class="stat-box"><div class="st-num">6 mo</div><div class="st-lbl">From blank site to active company-wide use</div></div>
+          <div class="stat-box"><div class="st-num">3</div><div class="st-lbl">Top-level sections, each with its own page set</div></div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h3>Site architecture</h3>
+        <p>I planned the full navigation before building a single page — three top-level menus, each with its own dropdown, with audience targeting switched on so different teams see different links on sign-in.</p>
+        <div class="sitemap">
+          <div class="sitemap-col">
+            <div class="sm-head">ABOUT RUBYWORKS</div>
+            <ul>
+              <li>Leadership</li>
+              <li>Company News</li>
+              <li>Employee Directory</li>
+              <li>Experts Platform</li>
+            </ul>
+          </div>
+          <div class="sitemap-col">
+            <div class="sm-head">HR</div>
+            <ul>
+              <li>Current Job Openings</li>
+              <li>New Joiners</li>
+              <li>Rubyworks Activities</li>
+              <li>Onboarding</li>
+            </ul>
+          </div>
+          <div class="sitemap-col">
+            <div class="sm-head">DEPARTMENTS</div>
+            <ul>
+              <li>Financial Research &amp; Analysis</li>
+              <li>↳ IB · FRA-Startups · FRA-ECM</li>
+              <li>Accounting &amp; Finance</li>
+              <li>(restricted access — below)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h3>Home page — built from nine live widgets</h3>
+        <p>The home page is the first thing every employee sees, so I treated it as a dashboard: a custom hero banner, several card-based carousels pulling from live lists, and quick-access tools.</p>
+        <div class="widget-grid">
+          <div class="widget-card"><div class="wg-name">Hero &amp; moments carousel</div><div class="wg-desc">Custom "Welcome to Rubynet" banner with a company-moments carousel</div></div>
+          <div class="widget-card"><div class="wg-name">Birthdays &amp; anniversaries</div><div class="wg-desc">Card feed sourced from lists, auto-updating by category</div></div>
+          <div class="widget-card"><div class="wg-name">Management spotlight</div><div class="wg-desc">Rotating highlight on leadership updates and milestones</div></div>
+          <div class="widget-card"><div class="wg-name">Employee recognition</div><div class="wg-desc">"Celebrating Our People" carousel tied to the R&amp;R program</div></div>
+          <div class="widget-card"><div class="wg-name">New joiners carousel</div><div class="wg-desc">Welcomes new hires as soon as HR publishes their post</div></div>
+          <div class="widget-card"><div class="wg-name">Find People + quick links</div><div class="wg-desc">People search plus tiles to Outlook, Teams, Zoho and LinkedIn</div></div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h3>Core pages</h3>
+        <p>Beyond the home page, I designed and built out the full page set that gives each part of the organisation a place to live:</p>
+        <div class="tech-grid">
+          <div class="tech-card">
+            <div class="tc-name">About Rubyworks</div>
+            <div class="tc-desc">Mission hero, alternating light/dark sections (who we are, what we do, how we do it), a six-tile services grid and the regions served.</div>
+          </div>
+          <div class="tech-card">
+            <div class="tc-name">Leadership</div>
+            <div class="tc-desc">Hero banner and a four-card leadership grid with photo, title and bio for each founder and department head.</div>
+          </div>
+          <div class="tech-card">
+            <div class="tc-name">HR Hub</div>
+            <div class="tc-desc">Policy tiles, benefits (including the R&amp;R program and Performance Management), an FAQ accordion, and a personal onboarding-progress tracker.</div>
+          </div>
+          <div class="tech-card">
+            <div class="tc-name">Employee Directory</div>
+            <div class="tc-desc">A structured list with Employee ID, Designation, Department and Date of Joining, rendered as photo cards — filled for every employee and feeding the home-page carousels.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h3>New Joiner Onboarding Path</h3>
+        <p>A checklist-driven onboarding journey covering pre-onboarding, HR formalities, document and asset collection, system access, policy acknowledgement, and salary account setup — with department-specific tracks for each function, including training material, case studies and team introductions, so a new hire's first weeks are self-guided rather than dependent on someone remembering to brief them.</p>
+      </section>
+
+      <section class="block">
+        <h3>Access control &amp; permissions</h3>
+        <p>Some department pages needed to stay restricted while the rest of the intranet stayed open — I set this up myself, learning SharePoint's permission model in the process.</p>
+        <div class="tech-grid">
+          <div class="tech-card">
+            <div class="tc-name">Dedicated permission groups</div>
+            <div class="tc-desc">A separate SharePoint permission group per restricted department (e.g. Accounting &amp; Finance), with its own join/leave and read-access rules.</div>
+          </div>
+          <div class="tech-card">
+            <div class="tc-name">Stopped permission inheritance</div>
+            <div class="tc-desc">Restricted pages no longer inherit site-wide access by default — only the assigned group can open them.</div>
+          </div>
+        </div>
+        <div class="callout">
+          I also wrote the handover documentation for both of these processes — step-by-step guides for adding navigation items, updating news widgets, editing lists, and setting up restricted-page permissions — so whoever maintains the intranet after me can do it without relearning SharePoint from scratch.
+        </div>
+      </section>
+
+      <div class="note">
+        Note: company name, tool names (Zoho, Microsoft 365) and site URLs have been generalised for confidentiality. The architecture, page design and permission structure shown are my own original work.
+      </div>
+
+    </div>
+
+    <div class="case" id="case-04">
+
+      <div class="case-head">
+        <div>
+          <p class="num">PROJECT 04</p>
+          <h2>Turning HR data into dashboards that support decisions</h2>
+          <p class="meta-line">Same 50-person organisation · HR Operations Intern · Attendance, leave, capacity, attrition, reporting and recruitment analytics</p>
+        </div>
+        <div class="stamp">DESIGNED &amp; BUILT<br>END-TO-END</div>
+      </div>
+
+      <section class="block">
+        <h3>The brief</h3>
+        <p>HR data was spread across daily biometric exports, monthly leave files and an employee master sheet, with no single view that HR or management could read quickly. I designed a connected set of dashboards and trackers that turn those raw files into clear, policy-linked views of punctuality, leave, capacity, headcount, attrition and hiring.</p>
+        <p>The focus throughout was reusable infrastructure rather than one-off reports. Each dashboard is built on formulas and fixed structures so it can be refreshed with new data instead of rebuilt, and every one is designed to be read by a non-technical manager. Below, each dashboard is shown with what went in, how it works and what it told us.</p>
+        <div class="stat-row">
+          <div class="stat-box"><div class="st-num">7</div><div class="st-lbl">Dashboards and trackers, each reusable month after month</div></div>
+          <div class="stat-box"><div class="st-num">12</div><div class="st-lbl">Fiscal months covered in the consolidated attendance dashboard</div></div>
+          <div class="stat-box"><div class="st-num">6</div><div class="st-lbl">Core metrics defined for the monthly HR tracker</div></div>
+          <div class="stat-box"><div class="st-num">8</div><div class="st-lbl">Input sheets in the reusable HR reporting workbook</div></div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h3>1. Attendance and punctuality dashboard</h3>
+        <p>The most detailed dashboard in the set. It gives HR and management a repeatable view of punctuality, working hours and presence for every employee, and flags policy violations early.</p>
+        <div class="dash-grid">
+          <div class="tech-card"><div class="tc-name">Inputs</div><div class="tc-desc">Daily biometric attendance reports for every employee (in time, out time, work duration, late by, early going by, status), plus the rules of the Be On Time policy: shift hours, grace periods, late and early thresholds and escalation steps.</div></div>
+          <div class="tech-card"><div class="tc-name">Analysis &amp; logic</div><div class="tc-desc">Per employee counts of late arrivals, early departures, incomplete 9-hour days and work after 7 PM, with the exact dates listed. Days present count as 1, half days as 0.5. Late flags are mutually exclusive, are measured against each person's own shift start, and are waived when the full 9-hour shift is completed.</div></div>
+          <div class="tech-card"><div class="tc-name">Insights &amp; decisions</div><div class="tc-desc">Red, amber and green status levels show who needs attention first. More than three violations in any category is a red flag and moves into the policy's escalation steps. Attendance also feeds the Professionalism section of the appraisal system in Project 01.</div></div>
+        </div>
+        <div class="pip-grid">
+          <div class="pip-card status-card" style="--g:var(--maroon)"><div class="pip-k">CRITICAL</div><div class="pip-v">Red flag. More than three violations in a tracked category, escalated under the policy.</div></div>
+          <div class="pip-card status-card" style="--g:var(--clay)"><div class="pip-k">WARNING AND CAUTION</div><div class="pip-v">Amber levels that show a pattern building before it reaches the red flag limit.</div></div>
+          <div class="pip-card status-card" style="--g:var(--teal)"><div class="pip-k">OK</div><div class="pip-v">Within policy limits. No action needed.</div></div>
+          <div class="pip-card status-card" style="--g:var(--slate)"><div class="pip-k">SPECIAL CASES</div><div class="pip-v">Employees on notice are tracked but never red flagged. Different shift patterns are assessed against their own thresholds.</div></div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h3>2. Leave tracking and utilisation</h3>
+        <p>A leave tracker and utilisation view that shows how much leave is taken, of what type, and how it affects available capacity.</p>
+        <div class="dash-grid">
+          <div class="tech-card"><div class="tc-name">Inputs</div><div class="tc-desc">Monthly leave files covering Privilege, Casual and Sick Leave, Sick and Planned WFH, Marriage and Bereavement Leave and Leave Without Pay.</div></div>
+          <div class="tech-card"><div class="tc-name">Analysis &amp; logic</div><div class="tc-desc">Full days count as 1.0 and half days as 0.5, totalled per employee per leave type. Clean-up rules map medical leave to Sick Leave, skip public holidays, treat generic WFH as Planned WFH and split comma-separated entries. Leave utilisation is shown as overall capacity used, with employees grouped into bands by individual capacity.</div></div>
+          <div class="tech-card"><div class="tc-name">Insights &amp; decisions</div><div class="tc-desc">Overall capacity used came out at about 90 percent, with 11 employees at full individual capacity and the rest spread across lower bands. Employees with zero leave were hidden so attention goes where leave actually occurs, and leave patterns were read alongside attendance. A department leave tracker with a daily calendar shows who is on leave, on WFH and how many people are available.</div></div>
+        </div>
+
+      </section>
+
+      <section class="block">
+        <h3>3. Workplace capacity management workbook</h3>
+        <p>A weekly view of how much of the expected working time each employee actually spent in the office, built to support capacity planning.</p>
+        <div class="dash-grid">
+          <div class="tech-card"><div class="tc-name">Inputs</div><div class="tc-desc">Monthly attendance dashboard files with one sheet per working day, and the employee roster matched by employee code to avoid name errors.</div></div>
+          <div class="tech-card"><div class="tc-name">Analysis &amp; logic</div><div class="tc-desc">Daily office hours are totalled by week. Capacity percentage is hours in office divided by total working hours, counted only on days with a punch record so new joiners and leavers are not understated. Each week carries a factual note on absences and half days, plus a total utilisation row.</div></div>
+          <div class="tech-card"><div class="tc-name">Insights &amp; decisions</div><div class="tc-desc">Colour bands make low and healthy utilisation visible at a glance. After a first version overstated working hours, the logic was corrected and each month was rebuilt from the original file rather than patched. The same thinking went into a 14-page Capacity Management Plan for management.</div></div>
+        </div>
+        <div class="split-bar rag-bar">
+          <span class="rag-r">Below 40%</span><span class="rag-y">40 to 70%</span><span class="rag-g">Above 70%</span>
+        </div>
+        <div class="split-legend">
+          <span><i style="background:var(--maroon)"></i>Low utilisation</span>
+          <span><i style="background:#e8dcb5"></i>Moderate</span>
+          <span><i style="background:var(--teal)"></i>Healthy</span>
+        </div>
+      </section>
+
+      <section class="block">
+        <h3>4. Workforce, headcount and attrition dashboard</h3>
+        <p>A Power BI dashboard built on the employee master sheet, giving leadership a live picture of who is in the organisation, who has left and why.</p>
+        <div class="dash-grid">
+          <div class="tech-card"><div class="tc-name">Inputs</div><div class="tc-desc">The employee master sheet: joining and last working dates, department, location, gender, exit reasons, performance review status and open requisitions.</div></div>
+          <div class="tech-card"><div class="tc-name">Analysis &amp; logic</div><div class="tc-desc">Headcount, gender and location splits, exits by reason and by department, a monthly attrition trend, review status and open positions. Attrition is calculated on average headcount. Tenure is shown as years and months, and a combination chart pairs exit counts with attrition percentage on a secondary axis.</div></div>
+          <div class="tech-card"><div class="tc-name">Insights &amp; decisions</div><div class="tc-desc">Education was the largest single exit reason, which separated planned departures from performance or role-fit exits. Two departments accounted for most exits, so retention attention could be focused there. The open positions view gave leadership one list of roles, seats, budget and location.</div></div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-box"><div class="st-num">38</div><div class="st-lbl">Employees on roll, plus 6 interns</div></div>
+          <div class="stat-box"><div class="st-num">22</div><div class="st-lbl">Exits analysed by reason, department and month</div></div>
+          <div class="stat-box"><div class="st-num">10 of 22</div><div class="st-lbl">Exits citing education, the largest single reason</div></div>
+          <div class="stat-box"><div class="st-num">9 / 19</div><div class="st-lbl">Open roles and seats tracked across two locations</div></div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h3>5. Monthly HR tracker</h3>
+        <p>A monthly scorecard of six metrics: employee capacity, attrition rate, new joinee rate, open positions, major events and red flags.</p>
+        <div class="dash-grid">
+          <div class="tech-card"><div class="tc-name">Inputs</div><div class="tc-desc">A defined data set for each of six metrics: headcount and budget, exits and reasons, new hires and sources, requisitions and their age, the HR calendar and patterns across the other metrics.</div></div>
+          <div class="tech-card"><div class="tc-name">Analysis &amp; logic</div><div class="tc-desc">Exits in the month divided by average headcount gives the attrition rate, and new hires divided by average headcount gives the new joinee rate. Open positions are tracked by age and pipeline stage. Major events and red flags are qualitative and drawn from the HR calendar.</div></div>
+          <div class="tech-card"><div class="tc-name">Insights &amp; decisions</div><div class="tc-desc">Metric cards, six-month trend charts, an events list and a red flag list that can be marked resolved. Triggers such as a spike in exits or a role open for more than 60 days turn trends into a visible action list for HR.</div></div>
+        </div>
+
+      </section>
+
+      <section class="block">
+        <h3>6. HR reporting and analytics workbook (MIS)</h3>
+        <p>A reusable Excel workbook for the full April to March year, covering the two departments. It was delivered as structure and formulas, ready to take data.</p>
+        <div class="dash-grid">
+          <div class="tech-card"><div class="tc-name">Inputs</div><div class="tc-desc">Eight structured input sheets: Employee Master, Attendance, Recruitment, Employee Movements, Salary, Market Salary, Capacity and Workforce, and an HR Incident Log, plus a Lists sheet for dropdowns.</div></div>
+          <div class="tech-card"><div class="tc-name">Analysis &amp; logic</div><div class="tc-desc">Reports cover hiring and recruitment, attrition and movements, workforce capacity and forecast, attendance, salary against market, diversity and major HR incidents. Six configurable period columns allow weekly, monthly, quarterly and half-yearly comparison, using SUMIFS, COUNTIFS, AVERAGEIFS and SUMPRODUCT so it works in any Excel version without refreshing.</div></div>
+          <div class="tech-card"><div class="tc-name">Insights &amp; decisions</div><div class="tc-desc">A single reporting structure for HR to run every period instead of rebuilding reports each time. Shared rules such as attrition on average headcount and mutually exclusive late flags keep numbers consistent across reports, and a reference bug caused by header rows was found and fixed during testing.</div></div>
+        </div>
+
+      </section>
+
+      <section class="block">
+        <h3>7. Recruitment, training and candidate trackers</h3>
+        <p>Supporting trackers that define hiring metrics and keep candidates and training activity organised.</p>
+        <div class="dash-grid">
+          <div class="tech-card"><div class="tc-name">Inputs</div><div class="tc-desc">Pipeline dates and offer data, an existing candidate template, and the training activities planned for each week.</div></div>
+          <div class="tech-card"><div class="tc-name">Analysis &amp; logic</div><div class="tc-desc">Time to Hire (pipeline entry to offer acceptance, distinguished from Time to Fill), Quality of Hire, and Offer Acceptance Rate (offers accepted divided by offers made), each with a formula, worked example and benchmark. The candidate tracker uses dropdowns for status, CV source and notice period, with filters and frozen panes, plus an Interview sheet.</div></div>
+          <div class="tech-card"><div class="tc-name">Insights &amp; decisions</div><div class="tc-desc">Every candidate's stage and interview feedback sits in one place, and recruitment metrics can be read against benchmarks. The training tracker groups onsite and online training, preparation, discussions, hiring and live projects by week, with a comments column for review.</div></div>
+        </div>
+
+      </section>
+
+      <section class="block">
+        <h3>Connecting the dashboards</h3>
+        <p>The dashboards were designed to work together. An individual employee template brings each person's attendance, leave and policy adherence into one record, using XLOOKUP and COUNTIF so data updates without manual copying. The same attendance logic is reused across the attendance dashboard, the capacity workbook and the MIS workbook, so one rule gives the same answer everywhere.</p>
+        <div class="callout">
+          These analytics link back to the other projects: attendance data supports the Professionalism score in the Performance Appraisal System (Project 01), and dashboards and web parts were deployed on the intranet (Project 03). A guide for sending biometric attendance data into the HR system was also written, so attendance can feed performance management directly.
+        </div>
+      </section>
+
+      <div class="note">
+        Note: employee names and individual-level data have been left out for confidentiality, and company figures have been generalised. The dashboard logic, structure and design decisions shown are my own original work.
+      </div>
+
+    </div>
+
+    <div class="case" id="case-05">
+
+      <div class="case-head">
+        <div>
+          <p class="num">PROJECT 05</p>
+          <h2>Drafting the company's HR policies from scratch</h2>
+          <p class="meta-line">Same 50-person organisation · HR Operations Intern · Policy research, drafting and documentation</p>
+        </div>
+        <div class="stamp">DRAFTED<br>FROM SCRATCH</div>
+      </div>
+
+      <section class="block">
+        <h3>The brief</h3>
+        <p>The company needed written policies to set clear expectations for attendance, conduct, employment terms and communication. I researched how different industries and companies handle each topic, then drafted the policies independently. For the key policies, I first wrote a detailed internal reference document covering the reasoning and legal points, and then turned it into a short, plain-language version that employees can follow easily.</p>
+        <div class="stat-row">
+          <div class="stat-box"><div class="st-num">15</div><div class="st-lbl">Policies, memos, manuals and clauses drafted</div></div>
+          <div class="stat-box"><div class="st-num">4</div><div class="st-lbl">Areas covered, from attendance to communication</div></div>
+          <div class="stat-box"><div class="st-num">2</div><div class="st-lbl">Stages for key policies: internal reference draft, then employee version</div></div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h3>Policies at a glance</h3>
+        <div class="split-legend"><span><i style="background:var(--teal)"></i>Attendance &amp; Leave</span><span><i style="background:var(--slate)"></i>Conduct &amp; Compliance</span><span><i style="background:var(--clay)"></i>Employment Terms</span><span><i style="background:var(--brass)"></i>Communication &amp; Engagement</span></div>
+        <div class="award-grid">
+          <div class="award-card" style="--g:var(--teal)">
+            <div class="a-name">Be On Time Policy</div>
+            <div class="a-tags"><span class="a-tag">Attendance &amp; Leave</span><span class="a-tag">Policy</span></div>
+            <div class="a-desc">Sets shift timings, punch in and out rules, grace limits and a step-by-step escalation for repeated late arrivals and early exits.</div>
+          </div>
+          <div class="award-card" style="--g:var(--teal)">
+            <div class="a-name">Leave &amp; WFH Policy</div>
+            <div class="a-tags"><span class="a-tag">Attendance &amp; Leave</span><span class="a-tag">Policy</span></div>
+            <div class="a-desc">Defines each leave type, work from home rules and the approval process, with added limits for new joiners, probation, PIP and notice period.</div>
+          </div>
+          <div class="award-card" style="--g:var(--teal)">
+            <div class="a-name">Sick WFH Memo</div>
+            <div class="a-tags"><span class="a-tag">Attendance &amp; Leave</span><span class="a-tag">Memo</span></div>
+            <div class="a-desc">Explains what Sick WFH is, when to use it, how to apply, and why leave taken on both sides of a weekend or holiday is not allowed.</div>
+          </div>
+          <div class="award-card" style="--g:var(--slate)">
+            <div class="a-name">Anti-Harassment Policy</div>
+            <div class="a-tags"><span class="a-tag">Conduct &amp; Compliance</span><span class="a-tag">Policy</span></div>
+            <div class="a-desc">Aligned with the POSH Act. Defines harassment with clear examples, how to report it, and the consequences.</div>
+          </div>
+          <div class="award-card" style="--g:var(--slate)">
+            <div class="a-name">Code of Conduct Policy</div>
+            <div class="a-tags"><span class="a-tag">Conduct &amp; Compliance</span><span class="a-tag">Policy</span></div>
+            <div class="a-desc">Sets expected professional behaviour, external image, care of company property and how to handle conflicts of interest.</div>
+          </div>
+          <div class="award-card" style="--g:var(--slate)">
+            <div class="a-name">Dress Code Policy</div>
+            <div class="a-tags"><span class="a-tag">Conduct &amp; Compliance</span><span class="a-tag">Policy</span></div>
+            <div class="a-desc">Sets the standard for professional appearance in the workplace.</div>
+          </div>
+          <div class="award-card" style="--g:var(--slate)">
+            <div class="a-name">Stock Trading Policy</div>
+            <div class="a-tags"><span class="a-tag">Conduct &amp; Compliance</span><span class="a-tag">Policy</span></div>
+            <div class="a-desc">Sets rules for employees' personal trading, to protect confidential market information in a financial services firm.</div>
+          </div>
+          <div class="award-card" style="--g:var(--slate)">
+            <div class="a-name">Client Poaching Policy</div>
+            <div class="a-tags"><span class="a-tag">Conduct &amp; Compliance</span><span class="a-tag">Policy</span></div>
+            <div class="a-desc">Protects client relationships by setting boundaries and preventive measures against employees taking clients away.</div>
+          </div>
+          <div class="award-card" style="--g:var(--clay)">
+            <div class="a-name">Absconding Policy</div>
+            <div class="a-tags"><span class="a-tag">Employment Terms</span><span class="a-tag">Policy</span></div>
+            <div class="a-desc">Defines absconding as unexplained absence of 3 to 5 days, with email warnings, termination, return of company assets and handling of resignation without full notice.</div>
+          </div>
+          <div class="award-card" style="--g:var(--clay)">
+            <div class="a-name">Notice Period Buyout Policy</div>
+            <div class="a-tags"><span class="a-tag">Employment Terms</span><span class="a-tag">Policy</span></div>
+            <div class="a-desc">Sets out the conditions and process for an employee to leave before completing the notice period.</div>
+          </div>
+          <div class="award-card" style="--g:var(--clay)">
+            <div class="a-name">Joining Bonus Policy</div>
+            <div class="a-tags"><span class="a-tag">Employment Terms</span><span class="a-tag">Policy</span></div>
+            <div class="a-desc">Defines who is eligible for a joining bonus and the conditions attached to it.</div>
+          </div>
+          <div class="award-card" style="--g:var(--clay)">
+            <div class="a-name">Service Agreement Clauses</div>
+            <div class="a-tags"><span class="a-tag">Employment Terms</span><span class="a-tag">Contract</span></div>
+            <div class="a-desc">Added clauses on conflict of interest, IP ownership, moonlighting and training bond to the employee service agreement.</div>
+          </div>
+          <div class="award-card" style="--g:var(--brass)">
+            <div class="a-name">Social Media Policy</div>
+            <div class="a-tags"><span class="a-tag">Communication &amp; Engagement</span><span class="a-tag">Policy</span></div>
+            <div class="a-desc">Protects client and confidential information online, sets professional conduct standards and requires approval for posts about the firm's work.</div>
+          </div>
+          <div class="award-card" style="--g:var(--brass)">
+            <div class="a-name">Internal Communication Guidelines</div>
+            <div class="a-tags"><span class="a-tag">Communication &amp; Engagement</span><span class="a-tag">Manual</span></div>
+            <div class="a-desc">A 2 to 3 page manual on how to communicate professionally, upward, downward and across teams, with email and Teams etiquette.</div>
+          </div>
+          <div class="award-card" style="--g:var(--brass)">
+            <div class="a-name">Employee Referral Policy</div>
+            <div class="a-tags"><span class="a-tag">Communication &amp; Engagement</span><span class="a-tag">Policy</span></div>
+            <div class="a-desc">Explains how employees can refer candidates for open roles and the incentive for a successful hire.</div>
+          </div>
+        </div>
+      </section>
+
+      <div class="note">
+        Note: company name has been generalised for confidentiality. The policy content, structure and wording shown are my own original work.
+      </div>
+
+    </div>
+
+    <div class="case" id="case-06">
+
+      <div class="case-head">
+        <div>
+          <p class="num">PROJECT 06</p>
+          <h2>Handling recruitment from job description to interview</h2>
+          <p class="meta-line">Same 50-person organisation · HR Operations Intern · Job descriptions, sourcing, screening and candidate tracking</p>
+        </div>
+        <div class="stamp">HANDLED<br>HIRING TO INTERVIEW</div>
+      </div>
+
+      <section class="block">
+        <h3>The brief</h3>
+        <p>As the company grew, new roles opened across its teams and I took on the hiring process alongside my other HR work. I wrote the job descriptions and vacancy posts, found and approached candidates through job portals, professional networks and agencies, managed applications in the applicant tracking system and held the first round of telephonic interviews. Candidates were successfully placed into the organisation.</p>
+      </section>
+
+      <section class="block">
+        <h3>The hiring process I ran</h3>
+        <div class="timeline">
+          <div class="t-item" data-n="1">
+            <div class="t-title">Define the role</div>
+            <div class="t-note">Turn the manager's requirements into a clear job description, using an existing company sample so every JD has the same structure and tone.</div>
+          </div>
+          <div class="t-item" data-n="2">
+            <div class="t-title">Advertise and source</div>
+            <div class="t-note">Publish vacancy posts, search for candidates on Naukri and LinkedIn Recruiter, share openings with employees for referrals and prepare a list of hiring agencies for financial services roles.</div>
+          </div>
+          <div class="t-item" data-n="3">
+            <div class="t-title">Screen and interview</div>
+            <div class="t-note">Review applications in the applicant tracking system and hold telephonic interviews to shortlist candidates for the managers.</div>
+          </div>
+          <div class="t-item" data-n="4">
+            <div class="t-title">Track and measure</div>
+            <div class="t-note">Keep every candidate's stage and interview feedback in one tracker, and read hiring speed and offer acceptance against benchmarks (see Project 04).</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h3>What I produced</h3>
+        <div class="tech-grid">
+          <div class="tech-card">
+            <div class="tc-name">Job descriptions</div>
+            <div class="tc-desc">Wrote JDs for the Founders' Office Intern role and the full-time Analyst for the expert platform, matching one standard structure. I rewrote the responsibilities into short one-line points in a student-friendly tone, because candidates tend to skip long lists.</div>
+          </div>
+          <div class="tech-card">
+            <div class="tc-name">Vacancy posts and announcements</div>
+            <div class="tc-desc">Drafted vacancy posts with the role, qualifications and skills needed, and adapted one hiring message for three open roles in the FRA team into email and text formats for sharing with employees and their networks.</div>
+          </div>
+          <div class="tech-card">
+            <div class="tc-name">Sourcing channels</div>
+            <div class="tc-desc">Used Naukri and LinkedIn Recruiter, registered the company on the ICAI portal to reach potential candidates, and listed hiring agencies in Pune for financial services professionals in Excel.</div>
+          </div>
+          <div class="tech-card">
+            <div class="tc-name">Employee referrals</div>
+            <div class="tc-desc">Created an employee referral email template that announces a role, explains the incentive and sets out how to submit a referral, linked to the referral policy in Project 05.</div>
+          </div>
+        </div>
+        <div class="callout">
+          The candidate tracker, the interview sheet and the recruitment metrics (Time to Hire, Quality of Hire and Offer Acceptance Rate) are covered in Project 04. Offer letters, appointment letters and onboarding follow in the employee lifecycle portfolio.
+        </div>
+      </section>
+
+      <div class="note">
+        Note: company name has been generalised for confidentiality, and no candidate names or details are shown. The documents and process shown are my own original work.
+      </div>
+
+    </div>
+
+    <div class="case" id="skills">
+
+      <div class="case-head">
+        <div>
+          <p class="num">ACROSS ALL PROJECTS</p>
+          <h2>Skills and tools</h2>
+          <p class="meta-line">What I used and learned while building the performance system, recognition program, intranet, dashboards, HR policies and recruitment</p>
+        </div>
+        <div class="stamp">APPLIED IN<br>LIVE WORK</div>
+      </div>
+
+      <section class="block">
+        <div class="skill-group">
+          <h4>HR design and policy</h4>
+          <div class="tech-grid">
+            <div class="tech-card"><div class="tc-name">System and framework design</div><div class="tc-desc">Designed a 360° appraisal model with weighted scoring, grading bands, increment rules and a structured improvement plan, and a recognition program tied to core values.</div></div>
+            <div class="tech-card"><div class="tc-name">Policy-linked rule design</div><div class="tc-desc">Turned written policy, such as the Be On Time policy, into exact rules, thresholds, exceptions and escalation steps that a dashboard can apply.</div></div>
+            <div class="tech-card"><div class="tc-name">Employee experience</div><div class="tc-desc">Built onboarding paths, recognition nominations and a communication hub so processes are clear and self-guided for new and existing employees.</div></div>
+            <div class="tech-card"><div class="tc-name">Policy drafting</div><div class="tc-desc">Wrote policies on attendance, leave, conduct, employment terms and communication, each as an internal reference draft and a short employee version.</div></div>
+            <div class="tech-card"><div class="tc-name">Compliance awareness</div><div class="tc-desc">Applied the POSH Act, labour and contract law basics and standard industry practice, for example when drafting the anti-harassment and absconding policies.</div></div>
+            <div class="tech-card"><div class="tc-name">Performance and talent management</div><div class="tc-desc">Designed 360° feedback, role-based KRAs, rating bands, increment and promotion links, improvement plans and a values-based recognition program.</div></div>
+            <div class="tech-card"><div class="tc-name">Employee relations and discipline</div><div class="tc-desc">Set clear escalation steps, warnings and consequences in policies on attendance, conduct, harassment and absconding, so cases are handled consistently.</div></div>
+            <div class="tech-card"><div class="tc-name">Recruitment and sourcing</div><div class="tc-desc">Ran hiring from job description to telephonic interview, sourcing through job portals, referrals, agencies and professional networks.</div></div>
+            <div class="tech-card"><div class="tc-name">Writing for candidates</div><div class="tc-desc">Wrote job descriptions and vacancy posts in a clear, short format that candidates actually read.</div></div>
+            <div class="tech-card"><div class="tc-name">Documentation and handover</div><div class="tc-desc">Wrote step-by-step guides, plans and policy documents so others can maintain what I built.</div></div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4>Data and analytics</h4>
+          <div class="tech-grid">
+            <div class="tech-card"><div class="tc-name">KPI and metric definition</div><div class="tc-desc">Defined attrition, new joinee rate, capacity, time to hire, quality of hire and offer acceptance rate with clear formulas, data needs and benchmarks.</div></div>
+            <div class="tech-card"><div class="tc-name">Data cleaning and validation</div><div class="tc-desc">Cleaned biometric and leave data, removed duplicates, fixed date formats, matched records by employee code and tested outputs until they were accurate.</div></div>
+            <div class="tech-card"><div class="tc-name">Data visualisation</div><div class="tc-desc">Designed light, simple dashboards with conditional formatting, status colours, trend charts and metric cards for non-technical readers.</div></div>
+            <div class="tech-card"><div class="tc-name">Workforce planning and capacity</div><div class="tc-desc">Tracked headcount, attrition, open positions, leave and office utilisation to plan team capacity and spot risks early.</div></div>
+            <div class="tech-card"><div class="tc-name">Turning data into action</div><div class="tc-desc">Linked each dashboard to a decision, such as red flags, escalation steps and hiring priorities, so the numbers lead to action.</div></div>
+            <div class="tech-card"><div class="tc-name">Interpretation and reporting</div><div class="tc-desc">Read patterns in attendance, leave and exits, and rewrote findings in plain language for managers.</div></div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4>Business partnering and interpersonal</h4>
+          <div class="tech-grid">
+            <div class="tech-card"><div class="tc-name">Stakeholder management</div><div class="tc-desc">Worked with founders, AVPs, department heads and employees to gather requirements, agree rules and get sign-off.</div></div>
+            <div class="tech-card"><div class="tc-name">Business-aligned thinking</div><div class="tc-desc">Built HR systems around what teams need, for example capacity planning, and linked appraisal and recognition to company values and goals.</div></div>
+            <div class="tech-card"><div class="tc-name">Fairness and objectivity</div><div class="tc-desc">Reduced bias through 360° feedback, scored criteria and clear eligibility rules, and applied the same rules to everyone.</div></div>
+            <div class="tech-card"><div class="tc-name">Communication and presentation</div><div class="tc-desc">Presented plans and findings to management, wrote memos, manuals and announcements, and explained policies to employees in simple language.</div></div>
+            <div class="tech-card"><div class="tc-name">Change management and adoption</div><div class="tc-desc">Introduced new policies, systems and tools with guides and handover notes so employees and managers could adopt them.</div></div>
+            <div class="tech-card"><div class="tc-name">Ownership and prioritisation</div><div class="tc-desc">Took work from idea to delivery without being chased and managed several projects alongside recurring tasks such as trackers and records.</div></div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4>Tools and platforms</h4>
+          <div class="tag-row">
+            <span class="a-tag">Excel (formulas, conditional formatting, data validation)</span>
+            <span class="a-tag">XLOOKUP · COUNTIF · SUMIFS · SUMPRODUCT</span>
+            <span class="a-tag">Power BI</span>
+            <span class="a-tag">Power Query</span>
+            <span class="a-tag">DAX</span>
+            <span class="a-tag">Python (pandas, openpyxl)</span>
+            <span class="a-tag">SharePoint</span>
+            <span class="a-tag">Zoho People</span>
+            <span class="a-tag">Microsoft 365 (Outlook, Teams, Forms)</span>
+            <span class="a-tag">Naukri</span>
+            <span class="a-tag">LinkedIn Recruiter</span>
+            <span class="a-tag">Applicant tracking system</span>
+            <span class="a-tag">eSSL biometric system</span>
+            <span class="a-tag">Napkin.ai</span>
+            <span class="a-tag">PowerPoint</span>
+            <span class="a-tag">Word</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4>Ways of working</h4>
+          <div class="tech-grid">
+            <div class="tech-card"><div class="tc-name">Research and benchmarking</div><div class="tc-desc">Studied how other companies and industries handle each policy before drafting, and adapted it to a financial services firm.</div></div>
+            <div class="tech-card"><div class="tc-name">Plain-language writing</div><div class="tc-desc">Wrote in a firm policy tone with simple English, set page limits and consistent formatting, so employees can read and follow each document.</div></div>
+            <div class="tech-card"><div class="tc-name">Self-directed learning</div><div class="tc-desc">Learned SharePoint, Power BI and advanced Excel from documentation and practice while delivering live work.</div></div>
+            <div class="tech-card"><div class="tc-name">Reusable over one-off</div><div class="tc-desc">Preferred formulas and fixed structures over manual work, so each tool keeps working month after month.</div></div>
+            <div class="tech-card"><div class="tc-name">Testing and correcting</div><div class="tc-desc">Reviewed outputs critically and fixed logic errors, such as capacity calculations that understated new joiners.</div></div>
+            <div class="tech-card"><div class="tc-name">Confidentiality</div><div class="tc-desc">Handled employee data carefully and generalised names and figures wherever work is shared.</div></div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      Shreya Sharma · MBA HR Management, D.Y. Patil University &nbsp;·&nbsp; <a href="mailto:shreyaasharmaa03@gmail.com" style="text-decoration:underline">shreyaasharmaa03@gmail.com</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/shreyaa-sharma-664273270" target="_blank" rel="noopener noreferrer" style="text-decoration:underline">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script>
+  (function () {
+    var sel = document.getElementById('sectionSelect');
+    var cases = document.querySelectorAll('.case');
+    var mq = window.matchMedia('(max-width: 640px)');
+    var current = 'case-01';
+
+    function ids() { return Array.prototype.map.call(cases, function (c) { return c.id; }); }
+
+    function render() {
+      Array.prototype.forEach.call(cases, function (c) {
+        c.hidden = mq.matches && c.id !== current;
+      });
+      sel.value = current;
+    }
+
+    function fromHash() {
+      var h = (location.hash || '').replace('#', '');
+      if (ids().indexOf(h) !== -1) current = h;
+    }
+
+    sel.addEventListener('change', function () {
+      current = sel.value;
+      render();
+      var hero = document.querySelector('.hero');
+      window.scrollTo(0, hero ? hero.offsetHeight : 0);
+    });
+
+    if (mq.addEventListener) { mq.addEventListener('change', render); }
+    else if (mq.addListener) { mq.addListener(render); }
+
+    window.addEventListener('hashchange', function () { fromHash(); render(); });
+
+    fromHash();
+    render();
+  })();
+  </script>
+
+</body>
+</html>
+
+</body></html>
